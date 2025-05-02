@@ -105,7 +105,7 @@ const Header = () => {
 
                     <div className="sm:flex-1 ltr:sm:ml-0 ltr:ml-auto sm:rtl:mr-0 rtl:mr-auto flex items-center space-x-1.5 lg:space-x-2 rtl:space-x-reverse dark:text-[#d0d2d6]">
                         <div className="sm:ltr:mr-auto sm:rtl:ml-auto"></div>
-                        <div>
+                        {/* <div>
                             {themeConfig.theme === 'light' ? (
                                 <button
                                     className={`${
@@ -147,9 +147,9 @@ const Header = () => {
                                     <IconLaptop />
                                 </button>
                             )}
-                        </div>
+                        </div> */}
                         <div className="dropdown shrink-0">
-                            <Dropdown
+                            {/* <Dropdown
                                 offset={[0, 8]}
                                 placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
                                 btnClassName="relative block p-2 rounded-full bg-white-light/40 dark:bg-dark/40 hover:text-primary hover:bg-white-light/90 dark:hover:bg-dark/60"
@@ -220,7 +220,7 @@ const Header = () => {
                                         </li>
                                     )}
                                 </ul>
-                            </Dropdown>
+                            </Dropdown> */}
                         </div>
                         <div className="dropdown shrink-0 flex">
                             <Dropdown
@@ -236,7 +236,7 @@ const Header = () => {
                                             <div className="ltr:pl-4 rtl:pr-4 truncate">
                                                 <h4 className="text-base">
                                                     John Doe
-                                                    <span className="text-xs bg-success-light rounded text-success px-1 ltr:ml-2 rtl:ml-2">Pro</span>
+                                                    {/* <span className="text-xs bg-success-light rounded text-success px-1 ltr:ml-2 rtl:ml-2">Pro</span> */}
                                                 </h4>
                                                 <button type="button" className="text-black/60 hover:text-primary dark:text-dark-light/60 dark:hover:text-white">
                                                     johndoe@gmail.com
@@ -244,24 +244,24 @@ const Header = () => {
                                             </div>
                                         </div>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <Link to="/users/profile" className="dark:hover:text-white">
                                             <IconUser className="w-4.5 h-4.5 ltr:mr-2 rtl:ml-2 shrink-0" />
                                             Profile
                                         </Link>
-                                    </li>
-                                    <li>
+                                    </li> */}
+                                    {/* <li>
                                         <Link to="/apps/mailbox" className="dark:hover:text-white">
                                             <IconMail className="w-4.5 h-4.5 ltr:mr-2 rtl:ml-2 shrink-0" />
                                             Inbox
                                         </Link>
-                                    </li>
-                                    <li>
+                                    </li> */}
+                                    {/* <li>
                                         <Link to="/auth/boxed-lockscreen" className="dark:hover:text-white">
                                             <IconLockDots className="w-4.5 h-4.5 ltr:mr-2 rtl:ml-2 shrink-0" />
                                             Lock Screen
                                         </Link>
-                                    </li>
+                                    </li> */}
                                     <li className="border-t border-white-light dark:border-white-light/10 py-3 flex justify-center cursor-pointer" onClick={() => dispatch(resetUser())}>
                                         <IconLogout className="w-4.5 h-4.5 ltr:mr-2 rtl:ml-2 rotate-90 shrink-0" />
                                         Sign Out

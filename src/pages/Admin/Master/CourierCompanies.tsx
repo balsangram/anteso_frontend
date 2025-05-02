@@ -83,24 +83,25 @@ const CourierCompanies = () => {
 
     return (
         <>
-            <ul className="flex space-x-2 rtl:space-x-reverse">
+            <ol className="flex text-gray-500 font-semibold dark:text-white-dark">
                 <li>
-                    <Link to="/" className="text-primary hover:underline">
+                    <Link to="/" className="hover:text-gray-500/70 dark:hover:text-white-dark/70">
                         Dashboard
                     </Link>
                 </li>
-                <li className="before:content-['/'] ltr:before:mr-2 rtl:before:ml-2">
-                    <span>CourierCompanies</span>
+                <li className="before:w-1 before:h-1 before:rounded-full before:bg-primary before:inline-block before:relative before:-top-0.5 before:mx-4">
+                    <button className="text-primary">CourierCompanies</button>
                 </li>
-            </ul>
+            </ol>
+
             <div className="panel px-0 border-white-light dark:border-[#1b2e4b]">
                 <div className="invoice-table">
                     <div className="mb-4.5 px-5 flex md:items-center md:flex-row flex-col gap-5">
                         <div className="flex items-center gap-2">
-                            <button type="button" className="btn btn-danger gap-2" onClick={() => deleteRow()}>
+                            {/* <button type="button" className="btn btn-danger gap-2" onClick={() => deleteRow()}>
                                 <IconTrashLines />
                                 Delete
-                            </button>
+                            </button> */}
                             <Link to="/admin/courier-companies/add" className="btn btn-primary gap-2">
                                 <IconPlus />
                                 Add New

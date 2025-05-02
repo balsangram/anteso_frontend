@@ -7,6 +7,7 @@ import store from './store';
 function App({ children }: PropsWithChildren) {
     const themeConfig = useSelector((state: IRootState) => state.themeConfig);
     const dispatch = useDispatch();
+    console.log('anteso 30-4-2025');
 
     useEffect(() => {
         dispatch(toggleTheme(localStorage.getItem('theme') || themeConfig.theme));

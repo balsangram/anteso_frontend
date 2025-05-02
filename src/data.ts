@@ -151,7 +151,7 @@ export const courierCompanies = [
 export const enquiriesData = [
     {
         id: 1,
-        name: 'XYZ',
+        hospitalName: 'XYZ',
         phone: '7896578904',
         email: 'xyz@gmail.com',
         hName: 'Hospital 1',
@@ -169,3 +169,4 @@ export const enquiriesData = [
         dateOfRSORenewal: '07-03-2007',
     },
 ];
+

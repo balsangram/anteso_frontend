@@ -32,6 +32,9 @@ import EditCourierCompanie from '../components/Admin/Master/CourierCompanies/Edi
 import Enquiry from '../pages/Admin/Enquiry';
 import AddEnquiry from '../components/Admin/Enquiry/Add';
 import EditEnquiry from '../components/Admin/Enquiry/Edit';
+import EnquiryForm from '../pages/Admin/EnquiryForm';
+import EnquriryForm from '../formLink/EnquriryForm';
+import Quotation from '../quotation/Quotation';
 const ContactUsBoxed = lazy(() => import('../pages/Pages/ContactUsBoxed'));
 const ContactUsCover = lazy(() => import('../pages/Pages/ContactUsCover'));
 const ComingSoonBoxed = lazy(() => import('../pages/Pages/ComingSoonBoxed'));
@@ -45,11 +48,21 @@ const Error = lazy(() => import('../components/Error'));
 
 const routes = [
     // dashboard
+    { path: '/enquiry_form', element: <EnquriryForm /> },
+    { path: '/quotation', element: <Quotation /> },
     {
         path: '/',
         element: (
             <AdminProtected>
                 <AdminDashboard />
+            </AdminProtected>
+        ),
+    },
+    {
+        path: '/enquiry-form',
+        element: (
+            <AdminProtected>
+                <EnquiryForm />
             </AdminProtected>
         ),
     },

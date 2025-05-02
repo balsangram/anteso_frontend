@@ -110,15 +110,15 @@ const Sidebar = () => {
 
                                         <AnimateHeight duration={300} height={currentMenu === 'masters' ? 'auto' : 0}>
                                             <ul className="sub-menu text-gray-500">
-                                                <li>
+                                                {/* <li>
                                                     <NavLink to="/admin/state">{t('State')}</NavLink>
-                                                </li>
-                                                <li>
+                                                </li> */}
+                                                {/* <li>
                                                     <NavLink to="/admin/city">{t('City')}</NavLink>
-                                                </li>
-                                                <li>
+                                                </li> */}
+                                                {/* <li>
                                                     <NavLink to="/admin/items">{t('Items')}</NavLink>
-                                                </li>
+                                                </li> */}
                                                 <li>
                                                     <NavLink to="/admin/clients">{t('Clients')}</NavLink>
                                                 </li>
@@ -131,9 +131,9 @@ const Sidebar = () => {
                                                 <li>
                                                     <NavLink to="/admin/dealer-and-manufacture">{t('Dealer And Manufacture')}</NavLink>
                                                 </li>
-                                                <li>
+                                                {/* <li>
                                                     <NavLink to="/admin/services">{t('Services')}</NavLink>
-                                                </li>
+                                                </li> */}
                                                 <li>
                                                     <NavLink to="/admin/courier-companies">{t('Courier Companies')}</NavLink>
                                                 </li>
